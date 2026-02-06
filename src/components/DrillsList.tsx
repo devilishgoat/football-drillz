@@ -1,4 +1,4 @@
-import { Drill } from '@/lib/types'
+import { Drill } from '@/src/lib/types'
 import styles from './DrillsList.module.css'
 
 interface DrillsListProps {

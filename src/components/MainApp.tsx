@@ -1,4 +1,4 @@
-import { User, Drill } from '@/lib/types'
+import { User, Drill } from '@/src/lib/types'
 import Header from './Header'
 import DrillForm from './DrillForm'
 import CalendarView from './CalendarView'
