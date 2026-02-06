@@ -1,4 +1,4 @@
-import { User } from '@/src/lib/types'
+import { User } from '@/lib/types'
 import styles from './Header.module.css'
 
 interface HeaderProps {

@@ -1,5 +1,5 @@
 import { useState, FormEvent } from 'react'
-import { Drill } from '@/src/lib/types'
+import { Drill } from '@/lib/types'
 import styles from './DrillForm.module.css'
 
 interface DrillFormProps {

@@ -1,9 +1,9 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import AuthScreen from '@/src/components/AuthScreen'
-import MainApp from '@/src/components/MainApp'
-import { User, Drill } from '@/src/lib/types'
+import AuthScreen from '@/components/AuthScreen'
+import MainApp from '@/components/MainApp'
+import { User, Drill } from '@/lib/types'
 
 const AUTH_KEY = 'drillbook_auth'
 const DRILLS_KEY = 'drillbook_drills'
