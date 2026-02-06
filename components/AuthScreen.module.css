@@ -1,0 +1,120 @@
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.authScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.authBox {
+  background: var(--glass);
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 50px 40px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 20px 60px var(--shadow-deep);
+  animation: slideUp 0.6s ease-out;
+}
+
+.logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 56px;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, var(--accent-yellow), var(--accent-orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 4px 20px rgba(255, 214, 10, 0.3);
+}
+
+.tagline {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.inputGroup {
+  margin-bottom: 24px;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: var(--line-white);
+  font-size: 16px;
+  font-family: 'Outfit', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.inputGroup input:focus {
+  outline: none;
+  border-color: var(--accent-yellow);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 4px rgba(255, 214, 10, 0.1);
+}
+
+.btnPrimary {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, var(--accent-yellow), var(--accent-orange));
+  border: none;
+  border-radius: 12px;
+  color: var(--grass-dark);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(255, 133, 0, 0.3);
+}
+
+.btnPrimary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(255, 133, 0, 0.4);
+}
+
+.btnPrimary:active {
+  transform: translateY(0);
+}
+
+.toggleAuth {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.toggleAuth button {
+  background: none;
+  border: none;
+  color: var(--accent-yellow);
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
+  font-family: 'Outfit', sans-serif;
+}

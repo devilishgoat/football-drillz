@@ -1,0 +1,129 @@
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 640px) {
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+.formGroup {
+  margin-bottom: 16px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.formGroup input,
+.formGroup textarea,
+.formGroup select {
+  width: 100%;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: var(--line-white);
+  font-size: 14px;
+  font-family: 'Outfit', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus,
+.formGroup select:focus {
+  outline: none;
+  border-color: var(--accent-yellow);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.tagInputContainer {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.tagInputContainer input {
+  flex: 1;
+}
+
+.btnAddTag {
+  padding: 12px 20px;
+  background: var(--accent-orange);
+  border: none;
+  border-radius: 10px;
+  color: var(--grass-dark);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btnAddTag:hover {
+  background: var(--accent-yellow);
+  transform: scale(1.05);
+}
+
+.tagsDisplay {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.tag {
+  padding: 6px 14px;
+  background: linear-gradient(135deg, var(--accent-yellow), var(--accent-orange));
+  color: var(--grass-dark);
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  animation: popIn 0.3s ease-out;
+}
+
+.tag button {
+  background: none;
+  border: none;
+  color: var(--grass-dark);
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0;
+  line-height: 1;
+}
+
+.btnSubmit {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, var(--accent-yellow), var(--accent-orange));
+  border: none;
+  border-radius: 12px;
+  color: var(--grass-dark);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.btnSubmit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 133, 0, 0.4);
+}

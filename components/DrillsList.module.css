@@ -1,0 +1,100 @@
+.drillItem {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  transition: all 0.3s ease;
+  animation: slideIn 0.4s ease-out;
+}
+
+.drillItem:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--accent-yellow);
+  transform: translateX(5px);
+}
+
+.drillHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.drillTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--line-white);
+  margin-bottom: 4px;
+}
+
+.drillDate {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.drillTime {
+  font-size: 13px;
+  color: var(--accent-yellow);
+  font-weight: 500;
+}
+
+.drillDescription {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.drillTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.drillTag {
+  padding: 4px 12px;
+  background: rgba(255, 214, 10, 0.2);
+  border: 1px solid var(--accent-yellow);
+  color: var(--accent-yellow);
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.drillActions {
+  display: flex;
+  gap: 8px;
+}
+
+.btnDelete {
+  padding: 6px 12px;
+  background: rgba(255, 0, 0, 0.2);
+  border: 1px solid rgba(255, 0, 0, 0.4);
+  border-radius: 8px;
+  color: #ff6b6b;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btnDelete:hover {
+  background: rgba(255, 0, 0, 0.3);
+  border-color: #ff6b6b;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 60px 20px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.emptyStateIcon {
+  font-size: 64px;
+  margin-bottom: 16px;
+  opacity: 0.3;
+}
+
+.emptyStateText {
+  font-size: 16px;
+}
